@@ -29,7 +29,7 @@ function setup() {
 
   ellipse(180, 200, 200, 200);
   //      x,  y    width, height in px
-  //  creates an ellipse (oval)
+  //  creates an ellipse
 
   fill(0, 255, 0);
   //  red, green, blue - RGB
