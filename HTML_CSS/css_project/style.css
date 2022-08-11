@@ -1,0 +1,48 @@
+/* Each block of css below is called a CSS rule  */
+
+h1 {
+  /* <--- This is a selector */
+  text-align: center;
+  /* text-align, color, background-color, font-family, border are called CSS properties*/
+  /* center, brown, rgb(), Helvetica, etc.  are all values */
+
+  color: brown;
+  background-color: rgb(194, 246, 151);
+  font-family: Helvetica; /* font-family is essentially the font style that we're using. (Arial, Times New Roman, etc.) */
+  border: 10px solid #82e7e1;
+}
+
+/* resizing all the images on the page */
+img {
+  width: 250px;
+}
+
+body {
+  font-size: 20px;
+}
+
+div {
+  background-color: teal;
+  text-align: center;
+}
+
+h2 {
+  color: white; /* change the color of the font to white */
+}
+
+ul {
+  color: purple;
+  background-color: rgb(150, 150, 150);
+  text-decoration: underline; /* text-decoration is used to make changes to text. In this scenario, we are adding an underline to the text _____ */
+}
+
+p {
+  color: orange;
+}
+
+div p {
+  font-size: 200%; /* font size values can be expressed in pixels (30px) or percentages */
+  font-family: Courier New; /* we're using the font style named Courier New. Other font styles include Times New Roman, Arial, etc.*/
+  font-weight: bold; /* make the font BOLD */
+  text-decoration: overline underline; /* add an underline and an overline to the text*/
+}
