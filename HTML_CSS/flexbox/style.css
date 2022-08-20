@@ -1,0 +1,53 @@
+body {
+  /* we're setting the font style to helvetica & the font-size to 20px and making the text bold */
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h1 {
+  /* Move the h1 text to the center of the screen*/
+  text-align: center;
+}
+
+img {
+  /* set the width of each image to 200px */
+  width: 200px;
+}
+
+div {
+  /* create a solid black border around each of the divs, add margin of 50px to all sides (top, bottom, left, right), and apply display:flex to the divs.  */
+  border: 5px solid black;
+  margin: 50px;
+  display: flex; /* display:flex sets the parent container (the div) as a flexbox and enables content for its direct children  */
+}
+
+/* for the div with the id of one, set the background color to aqua and move the items to the center of the container*/
+#one {
+  background-color: aqua; /* alternatively, we can set a color value using HEX decimal (#ff33ff22) or rgb(0, 255, 0)*/
+  justify-content: center;
+}
+
+/* for the div with the id of two, set the background color to greenyellow and move the items to the beginning of the container. flex-start is the default value of justify-content*/
+#two {
+  background-color: greenyellow; /* alternatively, we can set a color value using HEX decimal (#ff33ff22) or rgb(0, 255, 0)*/
+  justify-content: flex-start;
+}
+
+/* for the div with the id of three, set the background color to rebeccapurple and move the items to the end of the container. */
+#three {
+  background-color: rebeccapurple; /* alternatively, we can set a color value using HEX decimal (#ff33ff22) or rgb(0, 255, 0)*/
+  justify-content: flex-end;
+}
+
+/* for the div with the id of four, set the background color to gold. With justify-content: space-between, the items are evenly distributed in the line; first item is on the start line, last item on the end line */
+#four {
+  background-color: gold; /* alternatively, we can set a color value using HEX decimal (#ff33ff22) or rgb(0, 255, 0)*/
+  justify-content: space-between;
+}
+
+/* for the div with the id of five, set the background color to maroon. The items will appear in a column instead of a row (default).*/
+#five {
+  background-color: maroon; /* alternatively, we can set a color value using HEX decimal (#ff33ff22) or rgb(0, 255, 0)*/
+  flex-direction: column;
+}
