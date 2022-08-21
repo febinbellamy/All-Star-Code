@@ -1,9 +1,7 @@
 //step
 function mash() {
-  return `You will live in a ${getHome()}, travel to ${getTravelCount()} countries, and have a pet ${getPet()}!`;
+  return `You will live in a ${getHome()}, drive a ${getCar()}, work as a ${getOccupation()}, travel to ${getTravelCount()} countries, and have a pet ${getPet()}!`;
 }
-
-console.log(mash());
 
 //step 3
 function randNumGenerator(num) {
@@ -43,3 +41,40 @@ function getPet() {
     return process.argv[3];
   }
 }
+
+function getCar() {
+  // returns a random car
+  let carArr = [
+    "ferrari",
+    "hondaPilot",
+    "toyotaRav4",
+    "dodgeCharger",
+    "nissanSentra",
+    "corvette",
+  ];
+  if (process.argv[4]) {
+    //If there is a user input, push it to the end of the car array
+    carArr.push(process.argv[4]);
+  }
+  return carArr[randNumGenerator(carArr.length)]; //returns random car from car array
+}
+
+function getOccupation() {
+  //returns a random occupation
+  let occupationArr = [
+    "Software Engineer",
+    "Instructor",
+    "Entrepreneur",
+    "Content Creator",
+    "Tutor",
+    "Wendys Crew Member",
+  ];
+  if (process.argv[5]) {
+    // If there is a user input, push it to the end of the occupation array
+    occupationArr.push(process.argv[5]);
+  }
+  return occupationArr[randNumGenerator(occupationArr.length)]; //returns random element from occupation array
+}
+
+let result = mash();
+console.log(result);
